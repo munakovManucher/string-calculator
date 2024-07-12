@@ -42,7 +42,7 @@ public class StringCalculator {
 
 
         if (secondOperandIsNumber) {
-            if (secondOperandAsANumber < 1 && secondOperandAsANumber > 10) {
+            if (secondOperandAsANumber < 1 || secondOperandAsANumber > 10) {
                 throw new RuntimeException("число должно быть от 1 до 10");
             }
             if (operator.equals("*")) {
